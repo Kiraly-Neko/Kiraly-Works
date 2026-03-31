@@ -1,0 +1,171 @@
+body {
+  margin:0;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-size:16px;
+  line-height:1.7;
+  background:#0d0d0d;
+  color:#eee;
+  text-align:center;
+}
+
+/* 見出し */
+h1,h2{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+h2{
+  font-size:28px;
+  text-transform: uppercase;
+}
+
+h3{
+  margin:10px 0;
+  font-size:18px;
+}
+
+/* ヒーロー */
+.hero{
+  padding:240px 20px 120px;
+  background:
+    linear-gradient(rgba(13,13,13,0.7), rgba(13,13,13,0.9)),
+    url("images/Kiraly_mandolinB_header.jpg");
+  background-size:cover;
+  background-position:top center;
+}
+
+.hero h1{
+  font-size:52px;
+  margin-bottom:10px;
+  text-shadow:0 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p{
+  color:#aaa;
+  font-size:16px;
+  text-shadow:0 2px 10px rgba(0,0,0,0.8);
+}
+
+/* ナビ */
+nav{
+  background:#111;
+  padding:14px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  border-bottom:1px solid #222;
+}
+
+nav a{
+  margin:0 14px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#fff;
+}
+
+/* セクション */
+section{
+  padding:80px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* グリッド */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+}
+
+/* カード */
+.card{
+  background:#1a1a1a;
+  padding:18px;
+  border-radius:14px;
+  transition:0.25s;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.02);
+  background:#222;
+}
+
+/* 画像（統一！重要） */
+.card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:12px;
+}
+
+/* テキスト */
+.card p{
+  font-size:14px;
+  color:#aaa;
+  margin-bottom:10px;
+}
+
+/* ボタン風リンク */
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:6px 12px;
+  font-size:13px;
+  border-radius:6px;
+  background:#222;
+  color:#66ccff;
+  transition:0.2s;
+}
+
+.card a:hover{
+  background:#333;
+  transform:scale(1.05);
+}
+
+/* About */
+#about img{
+  width:120px;
+  border-radius:50%;
+  display:block;
+  margin:0 auto 20px;
+}
+
+#about p{
+  max-width:600px;
+  margin:10px auto;
+}
+
+/* Links */
+#links a{
+  display:inline-block;
+  margin:8px 12px;
+  font-size:14px;
+}
+
+a,
+a:visited{
+  color:#66ccff;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#99ddff;
+  text-decoration:underline;
+}
+
+a:active{
+  color:#66ccff;
+}
+
+/* フッター */
+footer{
+  padding:30px;
+  font-size:12px;
+  color:#888;
+}
